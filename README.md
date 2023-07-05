@@ -1,7 +1,7 @@
 # Rickrolling-with-Arduino-Uno-Rev-4-Wifi
 Used the Arduino Uno Rev 4 Wifi's LED matrix to play a portion of Rick Astley's "Never Gonna Give you Up." It's not perfect but works well enough for the Rickroll.
 
-[Rickroll](https://github.com/RavaszEmber/Rickrolling-with-Arduino-Uno-Rev-4-Wifi/blob/main/output_frame.png)
+![Rickroll](https://github.com/RavaszEmber/Rickrolling-with-Arduino-Uno-Rev-4-Wifi/blob/main/output_frame.png)
 
 There are a few python scripts as well as the Arduino .ini file to upload to the board. Here's an outline
 1. mp4ToBitmap.py takes an MP4 file and converts it into a 12 x 8 bitmap to be used on the Arduino Uno Rev 4 Wifi's LED matrix (since this is 12 x 8 LEDs). The bits here are determined by a threshold value for the 0's and 1's. I'd encourage you to look at cv2.adaptiveThreshold() as it will probably give clearer results than an arbitrary threshold value for all frames. Each frame from the video is save as a 12 x 8 bitmap in a /bmp folder.
